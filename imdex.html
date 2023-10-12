@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+        />
+        <title>Тестувальник - форма</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="" />
+                </div>
+                <div class="wrapper">
+                    <div class="form-description">
+                        <p class="subtitle">
+                            <span>XX</span>/<span>XX</span>/2023
+                        </p>
+                        <p class="subtitle">Безкоштовний вебінар</p>
+                        <p class="title">Тестувальник <span>ПЗ 3.0</span></p>
+                        <p class="subtitle">На вебінарі розглянемо:</p>
+                        <ui>
+                            <li class="text">
+                                Познайомимо з
+                                <span>термінами та інструментами</span>
+                            </li>
+                            <li class="text">
+                                Розберемось у <span>видах тестувань</span>
+                            </li>
+                            <li class="text">
+                                розвінчаємо популярні spanміфи щодо
+                                <span>професії</span>
+                            </li>
+                            <li class="text">
+                                З'ясуємо
+                                <span>ключові цілі</span> тестування
+                            </li>
+                            <li class="text">
+                                Розкажемо про етапи в кар'рі та
+                                <span>рівень ЗП</span>
+                            </li>
+                        </ui>
+                        <div class="form-description-footer">
+                            <p class="subtitle">
+                                <span class="green">Skill</span
+                                ><span class="red">Up</span> - Навчаємо і
+                                працевлаштовуємо тестувальників з 2011 року
+                            </p>
+                            <p class="subtitle">
+                                36'000+ випускників
+                                <span class="green">Skill</span
+                                ><span class="red">Up</span> працюють більше ніж
+                                у 1000 IT компаній світу
+                            </p>
+                        </div>
+                    </div>
+                    <form class="form" id="form" method="POST" action="">
+                        <div class="form-input-wrapper">
+                            <div class="form-input-label-wrapper">
+                                <label for="name">Ім'я</label>
+                            </div>
+                            <input
+                                required
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form-input"
+                                placeholder="Введіть ім'я"
+                            />
+                        </div>
+                        <div class="form-input-wrapper">
+                            <div class="form-input-label-wrapper">
+                                <label for="email">Пошта</label>
+                            </div>
+                            <input
+                                required
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="form-input"
+                                placeholder="Введіть пошту"
+                            />
+                        </div>
+                        <div class="form-input-wrapper">
+                            <div class="form-input-label-wrapper">
+                                <label for="number">Номер телефону</label>
+                            </div>
+                            <input
+                                required
+                                type="tel"
+                                name="phone1"
+                                id="phone1"
+                                class="form-input"
+                                placeholder="050 123 4567"
+                                minlength="10"
+                                maxlength="12"
+                            />
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="animated-btn" type="submit">
+                                Надіслати заявку<span></span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="form-description-footer-tablet">
+                        <p class="subtitle">
+                            <span class="green">Skill</span
+                            ><span class="red">Up</span> - Навчаємо і
+                            працевлаштовуємо тестувальників з 2011 року
+                        </p>
+                        <p class="subtitle">
+                            36'000+ випускників
+                            <span class="green">Skill</span
+                            ><span class="red">Up</span> працюють більше ніж у
+                            1000 IT компаній світу
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
