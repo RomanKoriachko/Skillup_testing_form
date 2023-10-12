@@ -54,8 +54,7 @@ table {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: white;
-  background-color: #121617;
+  color: #121617;
 }
 
 .row {
@@ -115,6 +114,8 @@ body {
 }
 .main .form-description .form-description-footer > .subtitle {
   font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 15px;
 }
 .main .form-description .form-description-footer .green {
   color: #4ebd09;
