@@ -47,8 +47,8 @@ body {
             font-weight: 600;
             line-height: 84px;
             letter-spacing: -0.04em;
-            padding-top: 10px;
-            padding-bottom: 20px;
+            padding-top: 30px;
+            padding-bottom: 40px;
             > span {
                 color: #e7462a;
             }
@@ -62,8 +62,13 @@ body {
                 color: #4ebd09;
             }
         }
+        ul {
+            li::marker {
+                color: #49be01;
+            }
+        }
         .form-description-footer {
-            margin-top: 30px;
+            margin-top: 50px;
             > .subtitle {
                 font-size: 26px;
                 line-height: 36px;
@@ -285,10 +290,15 @@ body {
             .title {
                 font-size: 36px;
                 line-height: 46px;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
             .text {
                 font-size: 16px;
                 line-height: 26px;
+            }
+            ul {
+                margin-bottom: 0;
             }
         }
         .form {
