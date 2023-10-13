@@ -150,6 +150,7 @@ body {
   background-image: url(images/background-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 65% 20%;
   position: relative;
   z-index: 10;
 }
@@ -177,8 +178,23 @@ body {
   line-height: 42px;
   letter-spacing: -0.04em;
 }
-.main .form-description .subtitle > span {
-  color: #e7462a;
+.main .form-description .subtitle > p:first-child {
+  font-size: 46px;
+  line-height: 56px;
+}
+.main .form-description .subtitle span {
+  color: #4ebd09;
+}
+.main .form-description .subtitle:first-child {
+  margin-bottom: 10px;
+}
+.main .form-description .white-bg {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  color: #4ebd09;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .main .form-description .title {
   font-size: 58px;
@@ -189,7 +205,7 @@ body {
   padding-bottom: 40px;
 }
 .main .form-description .title > span {
-  color: #e7462a;
+  color: #4ebd09;
 }
 .main .form-description .text {
   font-size: 20px;
@@ -218,9 +234,14 @@ body {
   border-radius: 15px;
   padding: 15px;
 }
-.main .form-description .form-description-footer > .subtitle {
-  font-size: 18px;
-  line-height: 28px;
+.main .form-description .form-description-footer .subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.main .form-description .form-description-footer .subtitle > p:first-child {
+  font-size: 20px;
+  line-height: 30px;
 }
 .main .form-description .form-description-footer .green {
   color: #4ebd09;
@@ -373,16 +394,15 @@ body {
   }
   .main .form-description-footer-tablet {
     display: block;
+    text-align: center;
     background-color: white;
     padding: 15px;
     border-radius: 15px;
     color: #2ecc40;
   }
-  .main .form-description-footer-tablet > .subtitle {
+  .main .form-description-footer-tablet .subtitle > p:first-child {
     font-size: 20px;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: -0.04em;
+    line-height: 30px;
   }
   .main .form-description-footer-tablet > .subtitle:first-child {
     margin-bottom: 16px;
@@ -409,6 +429,10 @@ body {
   .main .form-description .subtitle {
     font-size: 24px;
     line-height: 34px;
+  }
+  .main .form-description .subtitle > p:first-child {
+    font-size: 36px;
+    line-height: 46px;
   }
   .main .form-description .title {
     font-size: 36px;

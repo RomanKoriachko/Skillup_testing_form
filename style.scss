@@ -27,6 +27,7 @@ body {
     background-image: url(images/background-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 65% 20%;
     position: relative;
     z-index: 10;
     .darker-bg {
@@ -53,9 +54,23 @@ body {
             font-weight: 600;
             line-height: 42px;
             letter-spacing: -0.04em;
-            > span {
-                color: #e7462a;
+            > p:first-child {
+                font-size: 46px;
+                line-height: 56px;
             }
+            span {
+                color: #4ebd09;
+            }
+        }
+        .subtitle:first-child {
+            margin-bottom: 10px;
+        }
+        .white-bg {
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            color: #4ebd09;
+            width: fit-content;
         }
         .title {
             font-size: 58px;
@@ -65,7 +80,7 @@ body {
             padding-top: 30px;
             padding-bottom: 40px;
             > span {
-                color: #e7462a;
+                color: #4ebd09;
             }
         }
         .text {
@@ -96,10 +111,14 @@ body {
             color: #2ecc40;
             border-radius: 15px;
             padding: 15px;
-            > .subtitle {
-                font-size: 18px;
-                line-height: 28px;
-                // margin-bottom: 15px;
+            .subtitle {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                > p:first-child {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
             .green {
                 color: #4ebd09;
@@ -271,16 +290,21 @@ body {
         }
         .form-description-footer-tablet {
             display: block;
+            text-align: center;
             background-color: white;
             padding: 15px;
             border-radius: 15px;
             color: #2ecc40;
-            > .subtitle {
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 26px;
-                letter-spacing: -0.04em;
+            .subtitle {
+                // font-size: 20px;
+                // font-weight: 600;
+                // line-height: 26px;
+                // letter-spacing: -0.04em;
                 // margin-bottom: 16px;
+                > p:first-child {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
             }
             > .subtitle:first-child {
                 margin-bottom: 16px;
@@ -321,6 +345,10 @@ body {
             .subtitle {
                 font-size: 24px;
                 line-height: 34px;
+                > p:first-child {
+                    font-size: 36px;
+                    line-height: 46px;
+                }
             }
             .title {
                 font-size: 36px;
