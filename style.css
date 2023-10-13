@@ -243,8 +243,9 @@ body {
   text-align: center;
 }
 .main .form-description .form-description-footer .subtitle > p:first-child {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
 }
 .main .form-description .form-description-footer .green {
   color: #4ebd09;
@@ -392,6 +393,10 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  .main .form-description .title {
+    font-size: 54px;
+    line-height: 70px;
+  }
   .main .form-description .form-description-footer {
     display: none;
   }
@@ -405,6 +410,7 @@ body {
   }
   .main .form-description-footer-tablet .subtitle > p:first-child {
     font-size: 20px;
+    font-weight: 600;
     line-height: 30px;
   }
   .main .form-description-footer-tablet > .subtitle:first-child {
