@@ -172,6 +172,9 @@ body {
   align-items: center;
   min-height: calc(100vh - 123px);
 }
+.main .form-description .wrap {
+  display: none;
+}
 .main .form-description .subtitle {
   font-size: 30px;
   font-weight: 600;
@@ -425,6 +428,9 @@ body {
 @media (max-width: 576px) {
   .container {
     padding: 0 16px;
+  }
+  .main .form-description .wrap {
+    display: block;
   }
   .main .form-description .subtitle {
     font-size: 24px;
