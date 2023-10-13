@@ -131,7 +131,7 @@ table {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #121617;
+  color: white;
 }
 
 .row {
@@ -147,6 +147,20 @@ body {
 .main {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image: url(images/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+.main .darker-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  z-index: -1;
 }
 .main .logo {
   margin-bottom: 20px;
@@ -155,7 +169,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  height: calc(100vh - 130px);
+  min-height: calc(100vh - 123px);
 }
 .main .form-description .subtitle {
   font-size: 30px;
@@ -167,7 +181,7 @@ body {
   color: #e7462a;
 }
 .main .form-description .title {
-  font-size: 64px;
+  font-size: 58px;
   font-weight: 600;
   line-height: 84px;
   letter-spacing: -0.04em;
@@ -186,16 +200,27 @@ body {
 .main .form-description .text > span {
   color: #4ebd09;
 }
-.main .form-description ul li::marker {
-  color: #49be01;
+.main .form-description .list .list-item {
+  align-items: flex-start;
+  gap: 15px;
+}
+.main .form-description .list .marker {
+  min-height: 32px;
+  min-width: 25px;
+  background-image: url(images/check-circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .main .form-description .form-description-footer {
   margin-top: 50px;
+  background-color: white;
+  color: #2ecc40;
+  border-radius: 15px;
+  padding: 15px;
 }
 .main .form-description .form-description-footer > .subtitle {
-  font-size: 26px;
-  line-height: 36px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 28px;
 }
 .main .form-description .form-description-footer .green {
   color: #4ebd09;
@@ -348,12 +373,18 @@ body {
   }
   .main .form-description-footer-tablet {
     display: block;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    color: #2ecc40;
   }
   .main .form-description-footer-tablet > .subtitle {
     font-size: 20px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 26px;
     letter-spacing: -0.04em;
+  }
+  .main .form-description-footer-tablet > .subtitle:first-child {
     margin-bottom: 16px;
   }
   .main .form-description-footer-tablet .green {
@@ -361,6 +392,9 @@ body {
   }
   .main .form-description-footer-tablet .red {
     color: #e7462a;
+  }
+  .main .form {
+    padding: 30px 16px;
   }
   .main .form .btn-wrapper .animated-btn {
     background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
@@ -386,8 +420,12 @@ body {
     font-size: 16px;
     line-height: 26px;
   }
-  .main .form-description ul {
-    margin-bottom: 0;
+  .main .form-description .list .list-item {
+    margin-bottom: 5px;
+  }
+  .main .form-description .list .marker {
+    min-height: 26px;
+    min-width: 26px;
   }
   .main .form .btn-wrapper {
     width: 100%;
